@@ -1,32 +1,151 @@
+
 <!DOCTYPE html>
+<html lang=“en”>
 <head>
-    <title>Phaistos Disk</title>
-    <style>
-        body {
-            margin: 0;
-            background: #111;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-        /* embed {
-            width: 90%;
-            height: 90vh;
-            border: none;
-        } */
+    <meta charset=“UTF-8">
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0">
+    <title>Website Under Maintenance</title>
 
-        h1{
-            margin-top:12px;
-        }
-    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #111827, #1E3A8A);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .maintenance-box {
+            max-width: 650px;
+            width: 100%;
+            padding: 50px 30px;
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            animation: rotate 4s linear infinite;
+        }
+
+        h1 {
+            font-size: 46px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #DBEAFE;
+            margin-bottom: 30px;
+        }
+
+        .loader {
+            width: 55px;
+            height: 55px;
+            border: 5px solid rgba(255,255,255,0.2);
+            border-top-color: #fff;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            animation: spin 1s linear infinite;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #fff;
+            color: #1E3A8A;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            background: #DBEAFE;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #BFDBFE;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 34px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .maintenance-box {
+                padding: 30px 15px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <!-- <h1>An Explication of the Phaistos Disk</h1> -->
-    <!-- <embed src="An_Explication_of_The_Phaistos_Disk_Robert_Bradford_Lewis.pdf" type="application/pdf"> -->
 
-    <h1>
+    <div class=“maintenance-box”>
 
-        We are currently working on this website / Website under development</h1>
+        <div class=“icon”>
+            :wrench:
+        </div>
+
+        <h1>Website Under Maintenance</h1>
+
+        <p>
+            We’re currently working on some improvements
+            to give you a better experience.
+            We’ll be back shortly.
+        </p>
+
+        <div class=“loader”></div>
+
+        <a href=“codecreationsstudio@gmail.com” class=“contact-btn”>
+            Contact Us
+        </a>
+
+        <div class=“footer”>
+            Thank you for your patience and understanding.
+        </div>
+
+    </div>
+
 </body>
-</html> 
+</html>
